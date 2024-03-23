@@ -1,6 +1,7 @@
 import { IsString, IsBoolean, MinLength } from 'class-validator';
 
 export class CreateTaskDto {
+   
     @IsString()
     @MinLength(1)
     userName: string;
@@ -8,7 +9,7 @@ export class CreateTaskDto {
     @IsString()
     @MinLength(1)
     password: string;
-
+    
     @IsString()
     @MinLength(1)
     task:string;

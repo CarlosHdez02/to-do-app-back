@@ -2,6 +2,7 @@ import {Column, DeleteDateColumn, Entity} from 'typeorm';
 
 @Entity()
 export class Task {
+    
     @Column({primary:true,generated:true})
     id:number;
 
@@ -10,7 +11,7 @@ export class Task {
 
     @Column()
     password:string;
-
+    
     @Column()
     task:string;
 
