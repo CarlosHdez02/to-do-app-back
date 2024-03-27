@@ -7,18 +7,11 @@ export class Task {
     id:number;
 
     @Column()
-    userName:string;
-
-    @Column()
-    password:string;
-    
-    @Column()
     task:string;
 
-    @Column()
+    @Column({ default: false})
     finished:boolean;
 
     @DeleteDateColumn()
     deteledAt: Date;
-
 }

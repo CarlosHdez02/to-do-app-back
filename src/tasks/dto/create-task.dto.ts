@@ -2,18 +2,18 @@ import { IsString, IsBoolean, MinLength } from 'class-validator';
 
 export class CreateTaskDto {
    
-    @IsString()
+   /* @IsString()
     @MinLength(1)
     userName: string;
 
     @IsString()
     @MinLength(1)
-    password: string;
+    password: string;*/
     
     @IsString()
     @MinLength(1)
     task:string;
     
     @IsBoolean()
-    finished: boolean;
+    finished: boolean = false;
 }
